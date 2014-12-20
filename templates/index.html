@@ -13,7 +13,7 @@
             WEB_SOCKET_DEBUG = true;
             socket = io.connect('http://' + document.domain + ':' + location.port);
 
-            var client_message = "This is a client, I am attemping to communicate";
+            var client_message = "This is a client, I am attempting to communicate";
             socket.emit("channel-a", client_message);
             console.log("[x] Sent        : " + client_message);
 
